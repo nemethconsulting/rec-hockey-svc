@@ -6,7 +6,7 @@
 
 Review this page to see causes and fixes for common error codes.
 
-## Table of contents
+## Contents of this page
 1. [400: Bad Request](#1)
 2. [404: Not Found](#2)
 3. [405: Method Not Allowed](#3)

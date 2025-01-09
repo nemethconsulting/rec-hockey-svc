@@ -6,7 +6,7 @@
 ## Overview
 The `games` resource manages information about your team's hockey schedule, including dates, locations, and final scores.
 
-## Table of contents
+## Contents of this page
 1. [Base URL](#1)
 2. [Resource properties](#2)
 3. [Operations](#3)

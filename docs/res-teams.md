@@ -7,7 +7,7 @@
 
 The `teams` resource manages information about hockey teams, including their names, mascots, and win/loss records.
 
-## Table of contents
+## Contents of this page
 1. [Base URL](#1)
 2. [Resource properties](#2)
 3. [Operations](#3)

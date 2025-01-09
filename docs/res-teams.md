@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center; justify-content: space-between;">
   <h1>Teams resource</h1>
-  <img src="rhs-logo_4x4.jpeg" alt="Rec Hockey League Logo" style="width: 100px; height: 100px; margin-left: 20px;">
+  <img src="rec-hockey-service-logo_4x4.jpeg" alt="Rec Hockey League Logo" style="width: 100px; height: 100px; margin-left: 20px;">
 </div>
 
 ## Overview
@@ -31,24 +31,24 @@ Sample `teams` resource
 ```json
 {
   "id": 5,
-  "teamName": "Seattle Kraken",
-  "headquarters": "Seattle, WA",
-  "mascot": "Buoy the Troll",
-  "winLossRatio": "3-1-0",
-  "coach": "Dan Bylsma",
-  "numberOfPlayers": 23
+  "teamName": "Shoreline Squids",
+  "headquarters": "Shoreline, WA",
+  "mascot": "Sandy the Squid",
+  "winLossRatio": "1-1",
+  "coach": "Finn Splash",
+  "numberOfPlayers": 19
 }
 ```
 
-| Field Name      | Type     | Required | Description                           | Example Value       |
-|------------------|----------|----------|---------------------------------------|---------------------|
-| `id`            | Integer  | Yes      | Unique identifier for the team.       | `5`                 |
-| `teamName`      | String   | Yes      | Name of the team.                     | `"Seattle Kraken"`  |
-| `headquarters`  | String   | No       | Location of the team headquarters.    | `"Seattle, WA"`     |
-| `mascot`        | String   | No       | Name of the team's mascot.            | `"Buoy the Troll"`  |
-| `winLossRatio`  | String   | No       | Format: `Wins-Losses-Overtime Losses` | `"2-1-0"`           |
-| `coach`         | String   | No       | Name of the team's coach.             | `"Dave Hakstol"`    |
-| `numberOfPlayers`| Integer | No       | Number of players on the team.        | `23`                |
+| Field Name       | Type     | Required | Description                           | Example Value            |
+|-------------------|----------|----------|---------------------------------------|--------------------------|
+| `id`             | Integer  | Yes      | Unique identifier for the team.       | `5`                      |
+| `teamName`       | String   | Yes      | Name of the team.                     | `"Shoreline Squids"`     |
+| `headquarters`   | String   | No       | Location of the team headquarters.    | `"Shoreline, WA"`        |
+| `mascot`         | String   | No       | Name of the team's mascot.            | `"Sandy the Squid"`      |
+| `winLossRatio`   | String   | No       | Format: `Wins-Losses-Overtime Losses` | `"1-1"`                  |
+| `coach`          | String   | No       | Name of the team's coach.             | `"Finn Splash"`          |
+| `numberOfPlayers`| Integer  | No       | Number of players on the team.        | `19`                     |
 
 <a id="3"></a>
 ## Operations
@@ -69,24 +69,23 @@ curl -X GET {base_url}/teams
 ```json
 [
   {
-    "id": 1,
-    "teamName": "Pittsburgh Penguins",
-    "headquarters": "Pittsburgh, PA",
-    "mascot": "Iceburgh",
-    "winLossRatio": "0-0-0",
-    "coach": "Mike Sullivan",
-    "numberOfPlayers": 20
+    "id": 5,
+    "teamName": "Shoreline Squids",
+    "headquarters": "Shoreline, WA",
+    "mascot": "Sandy the Squid",
+    "winLossRatio": "1-1",
+    "coach": "Finn Splash",
+    "numberOfPlayers": 19
   },
   {
-    "id": 2,
-    "teamName": "New York Rangers",
-    "headquarters": "New York, NY",
-    "mascot": "None",
-    "winLossRatio": "0-0-0",
-    "coach": "Peter Laviolette",
-    "numberOfPlayers": 22
-  },
-  ...
+    "id": 6,
+    "teamName": "Bothell Blizzards",
+    "headquarters": "Bothell, WA",
+    "mascot": "Blake the Blizzard",
+    "winLossRatio": "1-1",
+    "coach": "Chill Iceberg",
+    "numberOfPlayers": 18
+  }
 ]
 ```
 
@@ -97,19 +96,17 @@ Add a new team
 
 #### Example request
 
-**Note** When you set the `id` to null, the server will generate a unique identifier for the new team.
-
 ```bash
 curl -X POST {base_url}/teams \
 -H "Content-Type: application/json" \
 -d '{
-  "id": null,
-  "teamName": "Los Angeles Kings",
-  "headquarters": "Los Angeles, CA",
-  "mascot": "Bailey the Lion",
-  "winLossRatio": "0-0-0",
-  "coach": "Todd McLellan",
-  "numberOfPlayers": 23
+  "id": 6,
+  "teamName": "Bothell Blizzards",
+  "headquarters": "Bothell, WA",
+  "mascot": "Blake the Blizzard",
+  "winLossRatio": "1-1",
+  "coach": "Chill Iceberg",
+  "numberOfPlayers": 18
 }'
 ```
 
@@ -117,13 +114,13 @@ curl -X POST {base_url}/teams \
 
 ```json
 {
-  "id": 10,
-  "teamName": "Los Angeles Kings",
-  "headquarters": "Los Angeles, CA",
-  "mascot": "Bailey the Lion",
-  "winLossRatio": "0-0-0",
-  "coach": "Todd McLellan",
-  "numberOfPlayers": 23
+  "id": 6,
+  "teamName": "Bothell Blizzards",
+  "headquarters": "Bothell, WA",
+  "mascot": "Blake the Blizzard",
+  "winLossRatio": "1-1",
+  "coach": "Chill Iceberg",
+  "numberOfPlayers": 18
 }
 ```
 
@@ -139,12 +136,12 @@ curl -X PATCH {base_url}/teams/5 \
 -H "Content-Type: application/json" \
 -d '{
   "id": 5,
-  "teamName": "Seattle Kraken",
-  "headquarters": "Seattle, WA",
-  "mascot": "Buoy the Troll",
-  "winLossRatio": "3-1-0",
-  "coach": "Dan Bylsma",
-  "numberOfPlayers": 23
+  "teamName": "Shoreline Squids",
+  "headquarters": "Shoreline, WA",
+  "mascot": "Sandy the Squid",
+  "winLossRatio": "2-1",
+  "coach": "Finn Splash",
+  "numberOfPlayers": 19
 }'
 ```
 
@@ -153,12 +150,12 @@ curl -X PATCH {base_url}/teams/5 \
 ```json
 {
   "id": 5,
-  "teamName": "Seattle Kraken",
-  "headquarters": "Seattle, WA",
-  "mascot": "Buoy the Troll",
-  "winLossRatio": "3-1-0",
-  "coach": "Dan Bylsma",
-  "numberOfPlayers": 23
+  "teamName": "Shoreline Squids",
+  "headquarters": "Shoreline, WA",
+  "mascot": "Sandy the Squid",
+  "winLossRatio": "2-1",
+  "coach": "Finn Splash",
+  "numberOfPlayers": 19
 }
 ```
 
@@ -170,7 +167,7 @@ This operation will permanently remove the team and its associated data from the
 #### Example request
 
 ```bash
-curl -X DELETE {base_url}/teams/7
+curl -X DELETE {base_url}/teams/6
 ```
 
 #### Example response

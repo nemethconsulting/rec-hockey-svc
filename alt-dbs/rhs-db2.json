@@ -1,0 +1,98 @@
+{
+    "teams": [
+        {
+            "id": 5,
+            "teamName": "Shoreline Squids",
+            "headquarters": "Shoreline, WA",
+            "mascot": "Sandy the Squid",
+            "winLossRatio": "1-1",
+            "coach": "Finn Splash",
+            "numberOfPlayers": 19,
+            "arenaName": "Squid Harbor",
+            "arenaAddress": "456 Coral St, Shoreline, WA 98155"
+        },
+        {
+            "id": 6,
+            "teamName": "Bothell Blizzards",
+            "headquarters": "Bothell, WA",
+            "mascot": "Blake the Blizzard",
+            "winLossRatio": "1-1",
+            "coach": "Chill Iceberg",
+            "numberOfPlayers": 18,
+            "arenaName": "Blizzard Bay",
+            "arenaAddress": "789 Snowy Ln, Bothell, WA 98011"
+        }
+    ],
+    "games": [
+        {
+            "id": 5,
+            "teamName": "Shoreline Squids",
+            "season": "2024-2025",
+            "seasonGames": [
+                {
+                    "gameNumber": 1,
+                    "date": "2024-10-19T19:00:00-08:00",
+                    "homeGame": true,
+                    "opposingTeam": "Bothell Blizzards",
+                    "finalScore": "3-2"
+                },
+                {
+                    "gameNumber": 2,
+                    "date": "2024-10-26T18:30:00-08:00",
+                    "homeGame": false,
+                    "opposingTeam": "Kirkland Kraken",
+                    "finalScore": "0-3"
+                },
+                {
+                    "gameNumber": 3,
+                    "date": "2024-11-06T19:00:00-08:00",
+                    "homeGame": true,
+                    "opposingTeam": "Bellevue Bison",
+                    "finalScore": "TBD"
+                },
+                {
+                    "gameNumber": 4,
+                    "date": "2024-11-13T18:30:00-08:00",
+                    "homeGame": false,
+                    "opposingTeam": "Issaquah Yetis",
+                    "finalScore": "TBD"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "teamName": "Bothell Blizzards",
+            "season": "2024-2025",
+            "seasonGames": [
+                {
+                    "gameNumber": 1,
+                    "date": "2024-10-20T19:00:00-08:00",
+                    "homeGame": true,
+                    "opposingTeam": "Redmond Rangers",
+                    "finalScore": "2-4"
+                },
+                {
+                    "gameNumber": 2,
+                    "date": "2024-10-27T18:30:00-08:00",
+                    "homeGame": false,
+                    "opposingTeam": "Issaquah Yetis",
+                    "finalScore": "3-1"
+                },
+                {
+                    "gameNumber": 3,
+                    "date": "2024-11-07T19:00:00-08:00",
+                    "homeGame": true,
+                    "opposingTeam": "Renton Raptors",
+                    "finalScore": "TBD"
+                },
+                {
+                    "gameNumber": 4,
+                    "date": "2024-11-14T18:30:00-08:00",
+                    "homeGame": false,
+                    "opposingTeam": "Kirkland Kraken",
+                    "finalScore": "TBD"
+                }
+            ]
+        }
+    ]
+}

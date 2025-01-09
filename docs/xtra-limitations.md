@@ -5,7 +5,7 @@
 
 There are some limitations to the `json-server` used with this mock API. Review the details below to understand the call and responses available in working with it.
 
-## Table of contents
+## Contents of this page
 1. [PATCH replaces entire nested arrays](#1)
 2. [PATCH cannot update multiple resources simultaneously](#2)
 3. [json-server cannot return specific fields](3)

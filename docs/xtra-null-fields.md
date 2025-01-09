@@ -18,6 +18,4 @@ You can use the following values as placeholders for data you plan to update lat
 
 **For arrays:** `null`, `""` (empty string), and `"TBD"` are all acceptable placeholders; but an empty field will not be accepted.
 
-**NOTE** If you pass a team `id` as `null`, `json-server` will automatically generate the id for you
-
 ### [Back to main menu](nav.md)

@@ -28,7 +28,7 @@ curl and Postman Desktop
 
 1. Start with a `GET` call to the `teams` resource to retrieve your team's details, or review our [teams resource](res-teams.md) doc to find the required fields.
 
-2. Let's assume you are updating the `winLossRatio` for the Seattle Kraken (team `id` = 5) after losing their second game against the Calgary Flames (They won their first game). 
+2. Let's assume you are updating the `winLossRatio` for the Shoreline Squids (team `id` = 5) after winning their first game against the Bothell Blizzards. 
 
 **Note** The `winLossRatio` field uses the format W-L-OTL where W is wins, L is losses, and OTL is overtime losses.
 
@@ -39,12 +39,12 @@ curl -X PATCH {base_url}/teams/5 \
 -H "Content-Type: application/json" \
 -d '{
   "id": 5,
-  "teamName": "Seattle Kraken",
-  "headquarters": "Seattle, WA",
-  "mascot": "Buoy the Troll",
-  "winLossRatio": "1-1-0",
-  "coach": "Dan Bylsma",
-  "numberOfPlayers": 23
+  "teamName": "Shoreline Squids",
+  "headquarters": "Shoreline, WA",
+  "mascot": "Sandy the Squid",
+  "winLossRatio": "1-0-0",
+  "coach": "Finn Splash",
+  "numberOfPlayers": 19
 }'
 ```
 
@@ -53,12 +53,12 @@ The response should look like:
 ```bash
 {
   "id": 5,
-  "teamName": "Seattle Kraken",
-  "headquarters": "Seattle, WA",
-  "mascot": "Buoy the Troll",
-  "winLossRatio": "1-1-0",
-  "coach": "Dan Bylsma",
-  "numberOfPlayers": 23
+  "teamName": "Shoreline Squids",
+  "headquarters": "Shoreline, WA",
+  "mascot": "Sandy the Squid",
+  "winLossRatio": "1-0-0",
+  "coach": "Finn Splash",
+  "numberOfPlayers": 19
 }
 ```
 
@@ -73,7 +73,7 @@ The response should look like:
 
 1. Start with a `GET` call to the `teams` resource to retrieve your team's details, or review our [teams resource](res-teams.md) doc to find the required fields.
 
-2. Let's assume you are updating the `winLossRatio` for the New Jersey (team `id` = 6) after losing their second game against the New York Rangers (They won their first game). 
+2. Let's assume you are updating the `winLossRatio` for the Bothell Blizzards (team `id` = 6) after losing their first game to the Redmond Rangers. 
 
 **Note** The `winLossRatio` field uses the format W-L-OTL where W is wins, L is losses, and OTL is overtime losses.
 
@@ -89,12 +89,12 @@ After updating the `winLossRatio` field, send the following `PATCH` call:
 ```json
 {
   "id": 6,
-  "teamName": "New Jersey Devils",
-  "headquarters": "Newark, NJ",
-  "mascot": "NJ Devil",
-  "winLossRatio": "1-1-0",
-  "coach": "Lindy Ruff",
-  "numberOfPlayers": 23
+  "teamName": "Bothell Blizzards",
+  "headquarters": "Bothell, WA",
+  "mascot": "Blake the Blizzard",
+  "winLossRatio": "0-1-0",
+  "coach": "Chill Iceberg",
+  "numberOfPlayers": 18
 }
 ```
 
@@ -102,13 +102,13 @@ The response should look like:
 
 ```js
 {
-    "id": 6,
-    "teamName": "New Jersey Devils",
-    "headquarters": "Newark, NJ",
-    "mascot": "NJ Devil",
-    "winLossRatio": "1-1-0",
-    "coach": "Lindy Ruff",
-    "numberOfPlayers": 23
+  "id": 6,
+  "teamName": "Bothell Blizzards",
+  "headquarters": "Bothell, WA",
+  "mascot": "Blake the Blizzard",
+  "winLossRatio": "0-1-0",
+  "coach": "Chill Iceberg",
+  "numberOfPlayers": 18
 }
 ```
 
@@ -121,11 +121,11 @@ The response should look like:
 <a id="4"></a>
 ### Errors & troubleshooting
 
-1. Errors often occur because of a mistyped command, including:
+1. Other errors often occur because of a mistyped command, including:
     - Forgetting to put a backslash after one of your lines of code in curl
-    - Using single quotes instead of backticks when delivering your json data
+    - Using single quotes instead of double quotes when delivering your json data
     - Mistyping the URL
-    - Forgetting a comma after a field entry in your JSON data
+    - Forgetting a comma after a field entry in your JSON data (or leaving a trailing comma where it doesn't belong)
     - Other misc mis-formatting of commands and json payloads
 
 **To troubleshoot:** Recheck your command closely and look for these potential errors.

@@ -17,7 +17,7 @@ Follow these steps to prepare your system to interact with our API
 
 Explore the main features of our API
 
-**NOTE** `{base_url}` is used as a placeholder in our documentation when referring the URL of a resource. It's value depends on the installation of the service, but is most commonly `http://localhost:3000/` when running on your local machine.
+**NOTE** `{base_url}` is used as a placeholder in our documentation when referring the URL of a resource. Its value depends on the installation of the service, but is most commonly `http://localhost:3000/` when running on your local machine.
 
 1. [Create an entry for your team](tut-create-team.md)
 2. [Add games to your team's calendar](tut-add-games.md)

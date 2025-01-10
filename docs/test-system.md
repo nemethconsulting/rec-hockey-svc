@@ -9,15 +9,31 @@ is the directory that contains your clone of the `rec-hockey-api` repo.
     ```bash
     cd <your GitHub repo workspace>
     ls
-    # (see the uw-rhs directory in the list)
-    cd rec-hockey-api
-    git checkout -b -<the branch you want to test>
+    # (see the rec-hockey-svc directory in the list)
+    cd rec-hockey-svc
+    git checkout -b <the branch you want to test>
     cd api
     sh start-server.sh
     ```
 
     If your development system is installed correctly, you should see
-    the service start and display the URL of the service, usually `http://localhost:3000`.
+    the service start and display the following:
+
+    ```bash
+    JSON Server started on PORT :3000
+    Press CTRL-C to stop
+    Watching rec-hockey-api-db.json...
+
+    Index:
+    http://localhost:3000/
+
+    Static files:
+    Serving ./public directory if it exists
+
+    Endpoints:
+    http://localhost:3000/teams
+    http://localhost:3000/games
+    ```
 
 2. Make a test call to the service.
 
@@ -25,7 +41,7 @@ is the directory that contains your clone of the `rec-hockey-api` repo.
     curl {base_url}/teams
     ```
 
-3. If the service is running correctly, you should see a list of teams from the service, such as in this example.
+3. If the service is running correctly, you should see a list of teams from the service, such as in this sample response.
 
 ```bash
  [

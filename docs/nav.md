@@ -7,7 +7,7 @@
 
 Follow these steps to prepare your system to interact with our API
 
-1. [Set up](prerequisites.md) your system to call our API
+1. [Prerequisites](prerequisites.md) for interacting with our API
 2. [Test](test-system.md) your setup
 
 ## Quick start

@@ -150,8 +150,6 @@ curl {base_url}/games/{id}
     * **URL**: `{base_url}/games/{id}`
     * **Headers**:
         * `Content-Type: application/json`
-    * **Request body**:
-        You can change the values of each property as needed.
 
 2. Click **Send** to make the request.
 
@@ -185,6 +183,6 @@ curl {base_url}/games/{id}
 <a id="5"></a>
 ## Next steps
 
-You've successfully started using the Rec Hockey League API! Explore our [documentation](nav.md) for more details on the using the API.
+You're now ready to dive deeper! Explore the [documentation](nav.md) to learn more about what the Rec Hockey League API can do.
 
 ## [Back to main menu](nav.md)

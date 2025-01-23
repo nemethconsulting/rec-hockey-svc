@@ -9,7 +9,7 @@ There are some limitations to the `json-server` used with this mock API. Review 
 1. [PATCH replaces entire nested arrays](#1)
 2. [PATCH cannot update multiple resources simultaneously](#2)
 3. [json-server cannot return specific fields](3)
-4. [StaticsServer does not dynamically update fields](#4)
+4. [json-server does not dynamically update fields](#4)
 5. [Limited support for advanced queries](#5)
 6. [Git Bash issues with multi-line JSON payloads](#6)
 7. [Back to main menu](nav.md)

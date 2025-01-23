@@ -27,7 +27,7 @@ curl and Postman Desktop
 
 1. Refer to the [teams resource](res-teams.md) doc for field descriptions and values constraints specific to this resource.
 
-2. Perform a `GET` call like you did in the [test your system](test-system.md) doc to retrieve a list of teams. In your subsequent `POST`, assign your team the next highest `id` available. (In the case of the following POST, this `id` will be 5).
+2. Perform a `GET` call like you did in the [test your system](test-system.md) doc to retrieve a list of teams. The API does not automatically generate id values, so you must provide one. Use the highest existing id + 1. (In the case of the following POST, this `id` will be 5).
 
 3. Format your `POST` call as follows:
 
@@ -70,7 +70,7 @@ The response should look like:
 
 1. Refer to the [teams resource](res-teams.md) doc for fields and values specific to this resource.
 
-2. Perform a `GET` call like you did in the [test your system](test-system.md) doc to retrieve a list of teams. In your subsequent `POST`, assign your team the next highest `id` available. (In the case of the following POST, this `id` will be 6).
+2. Perform a `GET` call like you did in the [test your system](test-system.md) doc to retrieve a list of teams. The API does not automatically generate id values, so you must provide one. Use the highest existing id + 1. (In the case of the following POST, this `id` will be 6).
 
 3. Format your `POST` call as follows:
 

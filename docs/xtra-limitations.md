@@ -77,7 +77,7 @@ curl -X PATCH {base_url}/games/5 \
     ```
 
 <a id="4"></a>
-## 4. Static server does not dynamically update fields
+## 4. json-server does not dynamically update fields
 
 - **Limitation**: json-server does not support dynamic updates (e.g., recalculating `winLossRatio` based on game results).
 
